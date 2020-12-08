@@ -17,15 +17,29 @@ export default class App {
         if (inicio> fin){
             let t = inicio;
             inicio = fin;
-            fin = t
+            fin = t;
         }
 
         for(let i = inicio; i<= fin; i++){
             if( i % 2 == 1){
-                impares++
+                impares++;
             }
         }
         return impares;
+    }
+
+    sumarParesWhile(){
+         let i = 1;
+         let suma = 0;
+
+        while(i <= 20){
+            if(i % 2 == 0){
+                suma = suma + i;
+            }
+        
+            i++;
+        }
+        return suma;
     }
 }
 
@@ -36,3 +50,5 @@ console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(5,10));
 console.log(app.contarImparesFor(5,11));
 console.log(app.contarImparesFor(11,5));
+
+console.log(app.sumarParesWhile());
