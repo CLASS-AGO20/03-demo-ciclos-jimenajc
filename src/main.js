@@ -14,6 +14,12 @@ export default class App {
     contarImparesFor(inicio, fin){
         let impares = 0;
 
+        if (inicio> fin){
+            let t = inicio;
+            inicio = fin;
+            fin = t
+        }
+
         for(let i = inicio; i<= fin; i++){
             if( i % 2 == 1){
                 impares++
@@ -29,3 +35,4 @@ console.log(app.sumarParesFor());
 
 console.log(app.contarImparesFor(5,10));
 console.log(app.contarImparesFor(5,11));
+console.log(app.contarImparesFor(11,5));
