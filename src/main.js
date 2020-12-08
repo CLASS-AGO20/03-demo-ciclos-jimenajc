@@ -44,11 +44,6 @@ export default class App {
 
     contarImparesWhile(inicio, fin){
        
-        if(inicio > fin){
-            let t = inicio;
-            inicio = fin;
-            fin = t;
-        }
        
         let i = inicio;
         let impares = 0;
@@ -115,7 +110,6 @@ console.log(app.contarImparesFor(11,5));
 console.log(app.sumarParesWhile());
 
 console.log(app.contarImparesWhile(5, 11));
-console.log(app.contarImparesWhile(11, 5));
 
 console.log(app.sumarParesDo());
 
